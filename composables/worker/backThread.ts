@@ -1,3 +1,5 @@
+import calSqrt from "../calSqrt";
+
 addEventListener("message", (e) => {
   let ca = e.data;
   while (!(ca % 2n)) {
