@@ -1,9 +1,14 @@
 export default (a: bigint) => {
   let ca = a;
   const ret: bigint[] = [];
+  while (!(ca % 2n)) {
+    ret.push(2n);
+    ca /= 2n;
+  }
+  let i = 3n;
   loop: while (ca !== 1n) {
     const ra = calSqrt(ca);
-    for (var i = 2n; i < ra; i++) {
+    for (; i < ra; i += 2n) {
       if (!(ca % i)) {
         ret.push(i);
         ca /= i;
