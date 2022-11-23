@@ -1,5 +1,5 @@
 import { jSXIdentifier } from "@babel/types";
-import MultiThreadWorker from "./worker/multiThread?worker";
+import MultiThreadWorker from "./worker/multiThread?worker&inline";
 
 const calNext = (
   worker: MultiThreadWorker,

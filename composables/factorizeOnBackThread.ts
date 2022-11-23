@@ -1,4 +1,4 @@
-import BackThreadWorker from "./worker/backThread?worker";
+import BackThreadWorker from "./worker/backThread?worker&inline";
 
 export default (a: bigint, callback: (a: bigint | false) => any) => {
   const worker = new BackThreadWorker();
