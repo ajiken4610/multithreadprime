@@ -1,1 +1,0 @@
-(function(){"use strict";var a=t=>{let e=t,s,n=0n;for(;e!==(s=(e+t/e)/2n)&&s!==n;)n=e,e=s;return e};addEventListener("message",t=>{let e=t.data;for(;!(e%2n);)postMessage(2n),e/=2n;let s=3n;e:for(;e!==1n;){const n=a(e);for(;s<n;s+=2n)if(!(e%s)){postMessage(s),e/=s;continue e}postMessage(e);break}postMessage(!1)})})();

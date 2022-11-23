@@ -1,1 +1,0 @@
-(function(){"use strict";addEventListener("message",t=>{let{number:e,start:s,end:a,finalThread:r}=t.data;for(;s<a;s+=2n)if(!(e%s)){postMessage({result:s,ca:e});return}postMessage({result:r?e:!1,ca:e})})})();
